@@ -55,4 +55,75 @@ button:active {
   box-shadow: 0 0 0 0 black;
 };
 
+/* animation */
 
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #000;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.bounce {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 5px #800505, 0 0 10px #800505, 0 0 20px #800505, 0 0 40px #800505, 0 0 80px #800505;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #04323b, 0 0 40px #04323b, 0 0 80px #04323b, 0 0 160px #04323b;
+    }
+}
+    
+ /* other */
+
+.cloud{ 
+   width:350px;
+   height:120px;
+   background:#ECEFF1;
+   box-shadow: 10px 10px rgba(0,0,0,0.2);
+   border-radius: 100px;
+   transform: translateY(70%);
+}
+
+#second {
+   width:350px;
+   height:120px;
+   background:#ECEFF1;
+   box-shadow: 10px 10px rgba(0,0,0,0.2);
+   border-radius: 100px;
+   transform: translateY(90%);
+
+}
+
+.cloud:after, .cloud:before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+    
+}
+
+
+.cloud::after {
+    width:100px;
+    height:100px;
+    top:-220px;
+    left:50px;
+ } 
+.cloud::before {
+    width:180px;
+    height:180px;
+    top: -70px;
+    left:130px;
+}
