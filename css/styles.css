@@ -95,16 +95,18 @@ button:active {
    transform: translateY(70%);
 }
 
-#second {
+.nube {
    width:350px;
    height:120px;
    background:#ECEFF1;
    box-shadow: 10px 10px rgba(0,0,0,0.2);
    border-radius: 100px;
-   transform: translateY(90%);
+   transform: translateX(150%);
+   opacity: 40%;
 
 }
 
+/*first cloud*/
 .cloud:after, .cloud:before{
     content:"";
     position:relative;
@@ -127,3 +129,29 @@ button:active {
     top: -70px;
     left:130px;
 }
+
+/*second cloud: (nube)*/
+.nube:after, .nube:before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+    
+}
+
+
+.nube::after {
+    width:100px;
+    height:100px;
+    top:-220px;
+    left:50px;
+ } 
+.nube::before {
+    width:180px;
+    height:180px;
+    top: -70px;
+    left:130px;
+}
+
+/*bird*/
